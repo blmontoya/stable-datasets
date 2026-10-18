@@ -53,6 +53,7 @@ Available Datasets
    cars196
    dtd
    fashion_mnist
+   kitti_distance
    k_mnist
    medmnist
    awa2
