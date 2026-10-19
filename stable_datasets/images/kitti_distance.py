@@ -54,9 +54,18 @@ class KITTIDistance(BaseDatasetBuilder):
     SOURCE = DatasetSource(
         homepage="https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d",
         assets={
-            "images": DownloadInfo(url="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip"),
-            "labels": DownloadInfo(url="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip"),
-            "devkit": DownloadInfo(url="https://s3.eu-central-1.amazonaws.com/avg-kitti/devkit_object.zip"),
+            "images": DownloadInfo(
+                url="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip",
+                checksum="sha256:351c5a2aa0cd9238b50174a3a62b846bc5855da256b82a196431d60ff8d43617",
+            ),
+            "labels": DownloadInfo(
+                url="https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip",
+                checksum="sha256:4efc76220d867e1c31bb980bbf8cbc02599f02a9cb4350effa98dbb04aaed880",
+            ),
+            "devkit": DownloadInfo(
+                url="https://s3.eu-central-1.amazonaws.com/avg-kitti/devkit_object.zip",
+                checksum="sha256:ce0b76b69c0c5f89690a0d65b7302bbbdb962a0c7e8aba6efc7050d1b04b4cf1",
+            ),
         },
         license="CC BY-NC-SA 3.0",
         citation="""@inproceedings{geiger2012kitti,
