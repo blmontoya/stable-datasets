@@ -24,6 +24,10 @@ reproducing the TFDS ``kitti`` v3 split used by VTAB:
 - **Validation**: 423 images
 - **Test**: 711 images
 
+.. image:: teasers/kitti_distance_teaser.png
+   :align: center
+   :width: 90%
+
 Data Structure
 --------------
 
